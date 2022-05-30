@@ -37,6 +37,7 @@ const game = () => {
     const updateScore = () => {
         const humanScore = document.querySelector('.human-score p');
         const computerScore = document.querySelector('.computer-score p');
+        const winner = document.getElementById('result');
         humanScore.textContent = hScore;
         computerScore.textContent = cScore;
 
@@ -45,6 +46,7 @@ const game = () => {
         startOver.addEventListener('click', () => {
             humanScore.innerHTML = "0";
             computerScore.innerHTML = "0";
+            winner.textContent = "CHOOSE ONE \u2193" 
         })
 
     };
