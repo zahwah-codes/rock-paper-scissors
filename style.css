@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'NimbusSanL-Reg';
+    height: 100vh;
+    font-size: 16px;
+}
+
+.score-board {
+    font-family: 'NimbusSanL-Reg';
+    height: 20vh;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.start-over {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.start-over button {
+    border: 2px solid black;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'NimbusSanL-Reg';
+    font-size: 1.5rem;
+    box-shadow: 1px 4px 0px;
+    cursor: pointer;
+    pointer-events:all;
+}
+
+.start-over button:active {
+    box-shadow: 0px 1px 0px;
+    transform: translateY(3px);
+}
+
+
+.hands {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-10deg);
+    animation: updown 1s linear infinite;
+}
+
+@keyframes updown {
+    0%, 100%{
+        bottom: 0%;
+}
+    50% {
+        bottom: 3%;
+    }
+}
+
+
+.human-hand {
+    width: 55%;
+}
+
+
+.computer-hand {
+    transform: rotate(-90deg);
+    width: 100%;
+    margin-right: -150px;
+}
+
+.match {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.choices{
+    height: 10vh;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.choices button {
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'NimbusSanL-Reg';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.choices button:hover {
+    background-color: black;
+    color: white;
+}
+
+
