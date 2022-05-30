@@ -28,7 +28,7 @@ const game = () => {
                 // Update Images
                 humanHand.src = `./human/${this.textContent}.svg`;
                 computerHand.src = `./computer/${computerChoice}.svg`; 
-                }, 1000);
+                }, 300);
 
             });
         });
